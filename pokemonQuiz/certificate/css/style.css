@@ -1,0 +1,48 @@
+body{
+    background-image: url(../img/syoujou.jpg);
+    background-color: #486d46;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.certificat-100 {
+    width: 100%;
+}
+
+.outer{
+    font-size: 40px;
+    text-align: center;
+    transform: translate(0,60%);
+}
+
+
+.certificate-100 img {
+    width: 1510px;
+    height: 752px;
+}
+
+.button-onmore a {
+    position: absolute;
+    top: 83%;
+    left: 35%;
+    padding: 0;
+    margin: 0;
+    color: #313131;
+    font-family: "Hiragino Sans","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ã‚·ãƒƒã‚¯";
+    font-size: 40px;
+}
+
+
+.button-title a {
+    position: absolute;
+    top: 83%;
+    left: 55%;
+    padding: 0;
+    margin: 0;
+    color: #313131;
+    font-family: "MS 明朝";
+    font-size: 40px;
+}
+
+.button-onmore a {
+}

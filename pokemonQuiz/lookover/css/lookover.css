@@ -1,0 +1,62 @@
+header{
+  font-size: 70px;
+  text-align: center;
+}
+body{
+  background-image: url(../img/backgroud.jpg);
+  background-position: 35% 13%;
+  background-size: 146vw;
+  font-family: "Hiragino Sans","ãƒ’ãƒ©ã‚®ãƒŽè§’ã‚´ã‚·ãƒƒã‚¯"; font-weight: 900;
+  color: #000;
+  -webkit-text-stroke: 2px #FFF;
+  text-stroke: 1px #FFF;
+}
+
+ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.problem{
+  font-size: 39px;
+  margin: 0px 0px 50px 40px;
+  color: black;
+  -webkit-text-stroke: 1px #FFF;
+  text-stroke: 1px #FFF;
+}
+
+.pokemon{
+  width: 5pc;
+  height: 5pc;
+  margin: -20px 0px 0px 50px;
+}
+.test{
+  display: flex;
+}
+.maru{
+  font-size: 30px;
+  margin: 0px 0px 50px 50px;
+  color:#FF0000;
+  font-weight: 1000;
+}
+
+.ball{
+  width: 6pc;
+  height: 5pc;
+}
+.batsu{
+  font-size: 30px;
+  margin: 0px 0px 50px 50px;
+  color:blue;
+  font-weight: 1000;
+  -webkit-text-stroke: 1px #000000;
+  text-stroke: 1px #000000;
+}
+button{
+  border: none;
+  outline: none;
+  background: transparent;
+}
+form{
+  margin-left: 85vw;
+}
