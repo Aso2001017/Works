@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Soejima</title>
+    <meta name="description" content="Sample">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/sanitize.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logo.svg">
+    <link rel="icon" type="image/png" sizes="32x32"href="./assets/images/logo.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logo.svg">
+    <link rel="manifest" href="./assets/images/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="./assets/images/logo.svg">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="headeer-logo">
+            <a href="#">
+                <img src="http://aso2001017.babyblue.jp/LP/assets/images/logo.svg" class="logo">
+                    <title>
+                        My Works
+                    </title>
+                </img>
+            </a>
+        </h1>
+        <nav class="header-nav">
+            <ul class="header-navlist">
+                <li class="header-navitem">
+                    <button id="About-nav">About</button>
+                </li>
+                <li class="header-navitem">
+                    <button id="Feature-nav">Achievement</button>
+                </li>
+                <li class="header-navitem">
+                	<button id="Blog-nav">Works</button>
+                </li>
+                <li class="header-navitem">
+                    <button id="Contact-nav">Contact</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="hero-particles" id="particles-js"></div>
+        <video autoplay loop muted preload class="video">
+            <source src="./assets/videos/topVideo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <section class="section">
+        <h1 class="section-headline" id="About">About</h1>
+        <figure class="about">
+        <img class="about-image" src="./assets/images/hakataStation.jpg" alt="About image" style="width: 600px;">
+            <figcaption class="about-caption">
+                <br/><br/><br/>
+                <p class="about-description">
+                    麻生情報ビジネス専門学校　情報工学科　高度ITシステム専攻(4年課程)　所属<br/>
+                    学校では資格取得や、チーム開発に力を入れている。<br/>
+                    現在は高度なWEBアプリを作るために、Spring Boot Frameworkを勉強中。並行して、アプリも制作中。<br/>
+                    趣味はサッカーの戦術分析。ファッションショーの鑑賞他多数。<br/>
+                    知的好奇心が強く、社会科学系の書籍が好き。<br/>
+                    お客様が求めるサービスを、納期を遵守し、イメージ通りに実装することが今後の目標。   
+                </p>
+                <br/><br/><br/>
+            </figcaption>
+        </figure>
+    </section>
+
+
+    <section class="section section-secoundary">
+        <h1 class="section-headline" id="Feature">achievement</h1>
+        <ul class="grid grid-col-4">
+            <li class="grid-item">
+                <dl class="feature">
+                    <dt class="feature-headline">1.基本情報技術者試験の合格</dt>
+                    <dd class="feature-image"><img src="./assets/images/受験勉強アイコン.png"  width="100" height="100" alt="Great Service"></dd>
+                    <dd class="feature-description">1年次に基本情報を取得。そのほかにJava検定3級やGAITのOnline Program IT Professional Bronzeを取得。</dd>
+                </dl>
+            </li>
+            <li class="grid-item">
+                <dl class="feature">
+                    <dt class="feature-headline">2.フロントエンド開発</dt>
+                    <dd class="feature-image"><img src="./assets/images/PCディスプレイのアイコン素材 2.png"  width="100" height="100" alt="High Performance"></dd>
+                    <dd class="feature-description">2年次にJavaScriptでの動的なWEBページ制作を学習。 </dd>
+                </dl>
+            </li>
+            <li class="grid-item">
+                <dl class="feature">
+                    <dt class="feature-headline">3.チーム開発</dt>
+                    <dd class="feature-image"><img src="./assets/images/チームのアイコン.png"  width="100" height="100" alt="Strong Responsibility"></dd>
+                    <dd class="feature-description">3年次にシステム開発の要件定義から運用まで幅広く担当。</dd>
+                </dl>
+            </li>
+            <li class="grid-item">
+                <dl class="feature">
+                    <dt class="feature-headline">4.フルスタックでの開発経験</dt>
+                    <dd class="feature-image"><img src="./assets/images/フルスタック.png"  width="100" height="100" alt="Excellent Technology"></dd>
+                    <dd class="feature-description">開発工程のフルスタックでのタスクを経験 </dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+
+    <section class="section">
+        <h1 class="section-headline" id="Blog">Works</h1>
+        <ul class="grid grid-col-3">
+            <li class="grid-item">
+                <article class="card">
+                    <a href="http://aso2001017.babyblue.jp/pokemonQuiz/Top/Top1.html" class="card-link" target="_blank">
+                        <span class="card-label">New</span>
+                        <img class="card-image" src="./assets/images/thumbnail_Pokemon.png" alt="thumbnail">
+                        <div class="card-info">
+                            <time class="card-time" datetime="2023-02-15">2022.02.15</time>
+                            <h1 class="card-headline">ポケモンだ～れだ？</h1>
+                            <p class="card-description">ポケモンのシルエットクイズを収録。言語切り替えでクイズを解きながら語学学習ができる。 </p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            <li class="grid-item">
+                <article class="card">
+                    <a href="https://github.com/Aso2001017/Works" class="card-link" target="_blank">
+                        <span class="card-label">New</span>
+                        <img class="card-image" src="./assets/images/thumbnail_Github.png" alt="thumbnail">
+                        <div class="card-info">
+                             <time class="card-time" datetime="2023-02-15">2022.02.15</time>
+                            <h1 class="card-headline">GitHub</h1>
+                            <p class="card-description">当ランディングページ , ポケモンだ～れだ？ , Dig.Dar のソースコードを掲載。 </p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+            <li class="grid-item">
+                <article class="card">
+                    <div class="card-link">
+                        <span class="card-label">Production!</span>
+                        <video autoplay loop muted preload class="card-image">
+                            <source src="./assets/videos/thumbnail_DigDar.mp4" type="video/mp4">
+                        </video>
+                        <div class="card-info">
+                             <time class="card-time" datetime="2023-02-15">2022.02.15</time>
+                            <h1 class="card-headline">Dig.Dar</h1>
+                            <p class="card-description">インスタグラムの対極の内向的なファッションセンスを磨くアプリ。鋭意制作中。</p>
+                        </div>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </section>
+    
+    <section class="section section-secoundary">
+        <h1 class="section-headline" id="Contact">Contact</h1>
+        <form class="form" action="mail.php" method="post">
+            <table class="form-table"> 
+                <tr>
+                    <th>
+                        <label for="name">
+                            Name
+                        </label>
+                    </th>
+                    <td>
+                        <input class="input" type="text" id="name" name="user">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="email">
+                            Email
+                        </label>
+                    </th>
+                    <td>
+                        <input class="input" type="email" id="email" name="userEmail">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="detail">
+                            Detail
+                        </label>
+                    </th>
+                    <td>
+                        <textarea class="textarea" id="detail" cols="30" rows="10" name="inquiry"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <div class="form-button">
+                <button class="button button-submission" type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <figure class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13295.353302551317!2d130.42108616931154!3d33.58354675192755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1d3cd04a5be47bb!2z6bq755Sf5oOF5aCx44OT44K444ON44K55bCC6ZaA5a2m5qChIOemj-WyoeagoQ!5e0!3m2!1sja!2sjp!4v1675839031805!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <figcaption class="footer-mapinfo">
+                <div class="footer-maplogo">
+                    Aso Information Business Technical School
+                </div>
+                <address class="footer-mapaddress">
+                    〒812-0016 福岡県福岡市博多区博多駅南２丁目１２−３２<br>
+                    <a href="https://goo.gl/maps/Z31mAvMdfMqiJXvv5" target="blank">Google Map</a>
+                </address>
+            </figcaption>
+        </figure>
+        <hr class="footer-line">
+        <small class="footer-copy">Copyright　©Landing Page Soejima</small>
+    </footer>
+
+
+
+
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+</body>
+</html>
