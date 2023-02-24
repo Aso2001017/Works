@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" th:href="@{/css/uploadStyle.css}">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="uploadStyle">
+	
+		<div class="title">
+		
+			<p class="titleText">■[upload style]</p>
+		
+		</div>
+		
+		<div class="photo">
+		
+			<img th:src="@{/img/300x400.png}" class="modal-image"><br>
+		
+		</div>
+		
+		<div class="textArea">
+			
+			<p class="digMemo">■[dig memo]</p>
+			<p class="memo1">memo1</p>
+			<p class="memo2">memo2</p>
+			<p class="memo3">memo3</p>
+			
+		</div>
+
+		
+		<a><button class="upload"><a href="" class="link">■[upload photo]</a></button>
+		
+		<button class="delete"><a th:href="@{uploadStyle}" class="link">■[delete photo]</a></button>
+	</div>
+</body>
+</html>

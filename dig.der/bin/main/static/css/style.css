@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/*背景*/
+body{
+	background-color: #CEC4AF;
+}
+
+/*ロゴ画像*/
+.logoImage{
+	display: block;
+    margin:auto;
+    margin-top: 40%;
+}
+
+/*ボタンデザイン*/
+.menu-btn {
+    position: fixed;
+    top: 10%;
+    right: 8%;
+    display: flex;
+    height: 128px;
+    width: 128px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #D9D9D9;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 7px;
+    width: 70px;
+    border-radius: 3px;
+    background-color: #808080;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 20px;
+}
+.menu-btn span:after {
+    top: 20px;
+}
+
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+/*ハンバーガーボタン押したらXにする*/
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+/*チェックボックス非表示*/
+#menu-btn-check {
+    display: none;
+}
+
+/*メニュー装飾CSS*/
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 80;
+    background-color: #CEC4AF;
+}
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    list-style: none;
+    text-align: center;
+}
+.menu-content ul li a {
+    display: block;
+    font-size: 48px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+/*リストのリンクボタン*/
+ul{
+	padding-top: 50%;
+}
+.listButton{
+    display: block;
+    width: 370px;
+    margin: auto;
+    margin-top: 12%;
+    background: #5B4E4E;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
+.listButton:link{
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+/*メニューを画面外へ*/
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;/*leftの値を変更してメニューを画面外へ*/
+    z-index: 80;
+    background-color: #CEC4AF;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+
+/*タップされたら画面内に*/
+#menu-btn-check:checked ~ .menu-content {
+    left: 0;/*メニューを画面内へ*/
+}

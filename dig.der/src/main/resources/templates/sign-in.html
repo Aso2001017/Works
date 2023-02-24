@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>sign in</title>
+<link rel="stylesheet" th:href="@{/css/sign.css}">
+</head>
+<body>
+	<!-- サインインフォーム -->
+	<form th:action="@{/login}" method="post">
+		<p class="username">■[enter your username]</p><br>
+		<input type="text" name="user_name" class="user"><br>
+		<p class="password">■[enter your password]</p>
+		<input type="text" name="password" class="pass"><br>
+		<input type="submit" value="■[submit]" name="login" class="post">
+	</form>
+</body>
+</html>

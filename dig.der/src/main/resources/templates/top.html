@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>dig.der</title>
+<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+	<!-- ハンバーガーメニュー -->
+	<div class="hamburger-menu">
+	
+		<input type="checkbox" id="menu-btn-check">
+		<label for="menu-btn-check" class="menu-btn"><span></span></label>
+		<div class="menu-content">
+            <ul>
+                <li>
+                    <a href="#" class="listButton">■[new dig]</a>
+                </li>
+				<li>
+                    <a th:href="@{memo}"  class="listButton">■[dig memo]</a>
+                </li>
+                <li>
+                    <a th:href="@{gallery}"  class="listButton">■[gallery]</a>
+                </li>
+                <li>
+                    <a th:href="@{sign-in}"  class="listButton">■[sign in]</a>
+                </li>
+                <li>
+                    <a href="#"  class="listButton">■[sign out]</a>
+                </li>
+                <li>
+                    <a th:href="@{sign-up}"  class="listButton">■[sign up]</a>
+                </li>
+            </ul>
+        </div>
+	</div>
+
+	<!-- ロゴ -->
+	<img class="logoImage" th:src="@{/img/512x512.png}">
+	
+
+</body>
+</html>

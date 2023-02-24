@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" th:href="@{/css/memo.css}">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="memo">
+	
+		<div class="title">
+		
+			<p class="titleText">■[dig memo]</p>
+		
+		</div>
+		
+		<p class="memo1">memo1</p>
+		<p class="memo2">memo2</p>
+		<p class="memo3">memo3</p>
+		
+		<a><button class="delete"><a href="" class="link">■[delete memo]</a></button>
+		
+		<button class="upload"><a th:href="@{uploadStyle}" class="link">■[upload style]</a></button>
+	</div>
+</body>
+</html>

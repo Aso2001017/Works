@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>gallery</title>
+<link rel="stylesheet" th:href="@{/css/gallery.css}">
+</head>
+<body>
+
+<!-- テストギャラリー -->
+<div class="flexArea">
+
+			
+
+</div>	
+
+<table>
+	<tr th:each="photo : ${photo}">
+		<td th:text="${photo.id}"></td>
+		<td th:text="${photo.pass}"></td>
+	</tr>
+</table>
+
+<div th:each="photo : ${photo}" class="galleryFrame">
+	<label class="open" for="pop-up7"><img th:src="@{/img/dummy7.png}"></label>
+	<input type="checkbox" id="pop-up7">
+	<div class="overlay">
+		<div class="window">
+			<label class="close" for="pop-up7">×</label>
+			<img th:src="@{/img/dummy7.png}" class="modal-image"><br>
+			</div>
+		</div>
+</div>
+
+</body>
+</html>
